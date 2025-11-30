@@ -1,0 +1,116 @@
+.header,
+.main,
+.footer-wrapper {
+  background-color: black;
+  padding: 20px;
+}
+
+.main,
+.footer-wrapper {
+  margin-top: 10px;
+}
+
+.nav {
+  display: flex;
+  background-color: navy;
+  justify-content: space-between;
+}
+
+.nav div {
+  background-color: red;
+  margin: 10px;
+  padding: 20px;
+}
+
+.nav div:first-child,
+.nav div:last-child {
+  width: 25%;
+}
+
+.nav div:nth-child(2) {
+  width: 50%;
+}
+
+.flex-basis {
+  flex-basis: 100%;
+}
+
+.banner {
+  margin-top: 10px;
+  display: flex;
+  background-color: orange;
+  justify-content: space-between;
+}
+
+.banner div {
+  background-color: yellow;
+  margin: 10px;
+  padding: 20px;
+}
+
+.container-1 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.last {
+  background-color: blueviolet;
+}
+
+.aside {
+  background-color: red;
+  width: 30%;
+}
+
+.aside div {
+  background-color: yellow;
+  margin: 10px;
+  padding: 20px;
+}
+
+.section {
+  background-color: gray;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.section div:nth-child(5) {
+  grid-column: span 2;
+  background-color: blueviolet;
+}
+
+.section div {
+  background-color: blue;
+  margin: 10px;
+  padding: 20px;
+}
+
+.main-footer {
+  background-color: orange;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    background-color: yellow;
+  }
+
+  .container-1 {
+    display: block;
+    background-color: red;
+    padding-bottom: 10px;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .aside {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+}
